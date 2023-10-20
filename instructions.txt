@@ -1,0 +1,27 @@
+Lanschool terminator for windows powershell v0.0.1
+Git link: https://github.com/ChunkyMonkey00/LanSchoolTerminator/tree/main
+INSTRUCTIONS:
+Download "lst.ps1", make sure to save it to an accessible folder.
+Right click on file, click 'run with powershell', if there pops up a warning, click open
+If you get a warning about running scripts on your computer, it is because you have yet to run a powershell script on that PC.
+If it asks (y/n), type y then enter. it will start running.
+Keep powershell open in the background. You can minimize, just do not close.
+
+WHY IS IT NOT RUNNING:
+The most common issue is that your computer has running powershell scripts disabled by default. 
+To fix this, right click on powershell and "Run as Administrator", then run this command in powershell:
+"set-executionpolicy remotesigned"
+
+If you are receiving errors, view stackoverflow for common fixes.
+
+HOW TO SHUT OFF:
+Close powershell. Yes its that easy.
+
+HOW CAN I TRUST THIS:
+Well, you're suspicious. And good on you for that. But breaking down this script line for line:
+$ErrorActionPreference = "SilentlyContinue" :: means that any error will not be outputted to powershell (to prevent overflow)
+
+while ($true) { :: While the variable "true" is true. (Basically an infinite loop)
+	taskkill /im LSAirClient.exe /f :: taskkill means it will attempt to shut down the task, /im specifies that we are calling upon an exe by its name. LSAirClient is of course, our culprit (the lanschool client). /f is a way to specify a file (works with /im)
+	taskkill /im LSAirClientUI.exe /f :: same as above, except it is the UI (user interface)
+} :: closes our loop.
