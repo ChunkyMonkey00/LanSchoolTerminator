@@ -10,6 +10,6 @@
 $ErrorActionPreference = "SilentlyContinue"
 
 while ($true) {
-    taskkill /im LSAirClient.exe /f
-    taskkill /im LSAirClientUI.exe /f
+    taskkill /im LSAirClient.exe /f 2>&1
+    taskkill /im LSAirClientUI.exe /f 2>&1
 }
