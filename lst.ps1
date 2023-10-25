@@ -7,9 +7,14 @@
 #Keep powershell open in the background. You can minimize, just do not close.
 #If the program just closes without running, you refer to the 'why is it not running' text file in github.
 
-$ErrorActionPreference = "SilentlyContinue"
+#What's new 09/25/23
+#Powershell will only send an output if it succesfully closes the LSAIRCLIENT
 
-while ($true) {
+$ErrorActionPreference="SilentlyContinue"
+
+while($true){
+
     taskkill /im LSAirClient.exe /f 2>&1
     taskkill /im LSAirClientUI.exe /f 2>&1
+
 }
