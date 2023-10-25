@@ -88,10 +88,10 @@ $ErrorActionPreference = "SilentlyContinue" :: means that any error will not be 
 while ($true) { :: While the variable "true" is true. (Basically an infinite loop)
 <br>
 <br>
-	taskkill /im LSAirClient.exe /f :: taskkill means it will attempt to shut down the task, /im specifies that we are calling upon an exe by its name. LSAirClient is of course, our culprit (the lanschool client). /f is a way to specify a file (works with /im)
+	taskkill /im LSAirClient.exe /f 2>&1 :: taskkill means it will attempt to shut down the task, /im specifies that we are calling upon an exe by its name. LSAirClient is of course, our culprit (the lanschool client). /f is a way to specify a file (works with /im), 2>&1 stops the program from printing a failure report (prevent overflow)
   <br>
 <br>
-	taskkill /im LSAirClientUI.exe /f :: same as above, except it is the UI (user interface)
+	taskkill /im LSAirClientUI.exe /f 2>&1 :: same as above, except it is the UI (user interface)
   <br>
 <br>
 } :: closes our loop.
