@@ -47,9 +47,11 @@ INSTRUCTIONS:
 Download "lst.ps1", make sure to save it to an accessible folder.
 <br>
 <br>
+<br>
 TO AVOID TEACHER SEEING POWERSHELL RUNNING:
 create a new desktop (on windows surface slide right from the left side of your screen and click new dektop at the top left)
 go to file explorer IN THE NEW DEKSTOP then continue on with the next steps.
+<br>
 <br>
 <br>
 Right click on file, click 'run with powershell', if there pops up a warning, click open
@@ -58,21 +60,26 @@ If it asks (y/n), type y then enter. it will start running.
 Keep powershell open in the background. You can minimize, just do not close.
 <br>
 <br>
+<br>
 WHY IS IT NOT RUNNING:
 The most common issue is that your computer has running powershell scripts disabled by default. 
 To fix this, right click on powershell and "Run as Administrator", then run this command in powershell:
 "set-executionpolicy remotesigned"
 <br>
 <br>
+<br>
 If you are receiving errors, view stackoverflow for common fixes.
+<br>
 <br>
 <br>
 HOW TO SHUT OFF:
 Close powershell. Yes its that easy.
 <br>
 <br>
+<br>
 HOW CAN I TRUST THIS:
 Well, you're suspicious. And good on you for that. But breaking down this script line for line:
+<br>
 <br>
 <br>
 $ErrorActionPreference = "SilentlyContinue" :: means that any error will not be outputted to powershell (to prevent overflow)
