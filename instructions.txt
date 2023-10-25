@@ -2,6 +2,11 @@ Lanschool terminator for windows powershell v0.0.1
 Git link: https://github.com/ChunkyMonkey00/LanSchoolTerminator/tree/main
 INSTRUCTIONS:
 Download "lst.ps1", make sure to save it to an accessible folder.
+
+TO AVOID TEACHER SEEING POWERSHELL RUNNING:
+create a new desktop (on windows surface slide right from the left side of your screen and click new dektop at the top left)
+go to file explorer IN THE NEW DEKSTOP then continue on with the next steps.
+
 Right click on file, click 'run with powershell', if there pops up a warning, click open
 If you get a warning about running scripts on your computer, it is because you have yet to run a powershell script on that PC.
 If it asks (y/n), type y then enter. it will start running.
