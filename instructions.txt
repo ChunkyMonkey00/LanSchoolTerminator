@@ -1,7 +1,7 @@
 Lanschool terminator for windows powershell v0.0.1
 Git link: https://github.com/ChunkyMonkey00/LanSchoolTerminator/tree/main
 INSTRUCTIONS:
-Download "lst.ps1", make sure to save it to an accessible folder.
+Download "LST.zip", make sure to save it to an accessible folder. Unzip it so you can access "lst.ps1".
 
 TO AVOID TEACHER SEEING POWERSHELL RUNNING:
 create a new desktop (on windows surface slide right from the left side of your screen and click new dektop at the top left)
