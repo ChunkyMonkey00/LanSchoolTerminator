@@ -1,1 +1,1 @@
-powershell.exe -windowstyle hidden -file ".\wechillin.ps1"
+powershell.exe -windowstyle hidden -file ".\lst.ps1"
