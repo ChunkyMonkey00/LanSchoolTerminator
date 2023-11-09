@@ -1,16 +1,12 @@
-Lanschool terminator for windows powershell v0.0.1
+Lanschool terminator for windows powershell v1.0.2
 Git link: https://github.com/ChunkyMonkey00/LanSchoolTerminator/tree/main
 INSTRUCTIONS:
 Download "LST.zip", make sure to save it to an accessible folder. Unzip it so you can access "lst.ps1".
 
-TO AVOID TEACHER SEEING POWERSHELL RUNNING:
-create a new desktop (on windows surface slide right from the left side of your screen and click new dektop at the top left)
-go to file explorer IN THE NEW DEKSTOP then continue on with the next steps.
-
-Right click on file, click 'run with powershell', if there pops up a warning, click open
+HOW TO RUN:
+Right click on launch.ps1, click 'run with powershell', if there pops up a warning, click open
 If you get a warning about running scripts on your computer, it is because you have yet to run a powershell script on that PC.
 If it asks (y/n), type y then enter. it will start running.
-Keep powershell open in the background. You can minimize, just do not close.
 
 WHY IS IT NOT RUNNING:
 The most common issue is that your computer has running powershell scripts disabled by default. 
@@ -20,7 +16,7 @@ To fix this, right click on powershell and "Run as Administrator", then run this
 If you are receiving errors, view stackoverflow for common fixes.
 
 HOW TO SHUT OFF:
-Close powershell. Yes its that easy.
+Run stop.ps1 (the same way you run launch.ps1)
 
 HOW CAN I TRUST THIS:
 Well, you're suspicious. And good on you for that. But breaking down this script line for line:
